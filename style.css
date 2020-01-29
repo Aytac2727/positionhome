@@ -8,27 +8,22 @@ box-sizing: border-box;
     clear: both;
 }
 
-header {
-    background-image: url(header1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.orta {
+    width: 960px;
+    margin: auto;
 }
 header .logo {
     float: left;
-    padding: 0 15px;
     color: rgb(199, 170, 9);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 header .menu {
     float: right;
-    color: white;
+    color: black;
 }
 
-header .header1 {
-    padding: 30px 20em;
-}
 header .menu li {
     display: inline-block;
     padding: 0 15px;
@@ -40,8 +35,15 @@ header .menu li:hover {
 }
 
 .welcome {
+    background-image: url(header1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.welcome {
     text-align: center;
-    height: 700px;
     width: 100%;
     padding: 10em;
     color: white;
@@ -49,13 +51,13 @@ header .menu li:hover {
 .welcome .text1 h2 {
     font-style:italic;
     font-size: 36px;
-    margin: 70px 0;
+    margin: 65px 0;
 }
 .welcome .text1 h1 {
     font-size: 4em;
 }
 
-header .welcome .btn1 {
+.welcome .btn1 {
 font-size: 20px;
 border-radius: 12px;
 background-color: #fed136;
@@ -64,37 +66,262 @@ padding: 20px 40px;
 color: white;
 margin-top: 30px;
 }
-header .welcome .btn1:hover {
+.welcome .btn1:hover {
 background-color:#e9bf29 ;
 }
 
 .services {
     text-align: center;
     width: 100%;
-    margin:5em;
-    height: 500px;
+    height: 650px;
 }
 
+.services .service {
+    padding: 35px 0;
+}
 .services .service h1 {
     font-size: 40px;
-    margin: 20px 0;
+    margin-top: 2em;
+    margin-bottom: 20px;
 }
 
-.services .service p {
-    font-size: 20px;
+.services h4 {
+    font-size: 24px;
     font-style: italic;
     color: grey;
 }
-
-.services .icons {
-    margin: 0 2em;
+.services p {
+    font-size: 20px;
+    color: grey;
 }
-
+.services .icon h2 {
+    padding: 25px 0;
+}
 .services .icon {
     float: left;
     width: 33.333%;
-    padding: 30px 10em;
-    color: white;
+    padding: 0 40px;
+}
+.services .icon i {
     background-color: #fed136;
+    border-radius: 60%;
+    padding: 20px 20px;
+    color: white;
+}
+
+.teams {
+    width: 100%;
+    text-align: center;
+    height: 700px;
+    padding: 40px 0;
+}
+
+.teams .team img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid rgba(0,0,0,.1);
     border-radius: 50%;
+}
+
+.teams h2 {
+    font-size: 40px;
+    padding: 10px 0;
+}
+.teams h3 {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    color: #6c757d;
+}
+.teams .team {
+    float: left;
+    width: 33.333%;
+    padding: 25px 0;
+}
+.teams .team h4 {
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.teams .team p {
+    padding-bottom: 12px;
+    color: #6c757d;
+}
+.teams .list li {
+    display: inline-block;
+    background-color: #212529;
+    color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.teams .list li:hover {
+    background-color:#fed136;
+    cursor: pointer;
+}
+.teams .list i {
+    padding: 15px;
+}
+
+.teams .end p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.firma  {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.firma .logos {
+    width: 25%;
+    float: left;
+    margin-top: 2em;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background: url(maps.png);
+    background-size: cover;
+    margin: auto;
+    padding: 3em 8em;
+}
+
+.map .mess {
+    padding: 15px 0;
+}
+.map .mess .left {
+    float: left;
+    width: 50%;  
+    margin-bottom: 5px;
+}
+
+.map .mess .right {
+    float:right;
+    width: 50%;
+}
+
+.map .mess .btn1 {
+    padding: 20px; 
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 0.25em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+ .map .mess li {
+     list-style: none;
+ }
+.map button {
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #fed136;
+    border-color: #fed136;
+    padding: 20px 40px;
+    color: white;
+    margin-top: 30px;
+}
+
+.map button:hover {
+    background-color: #f3c51d;
+    cursor: pointer;
+}
+.map h1 {
+    font-size: 40px;
+    color: white;
+    margin: 15px 0;
+}
+ .map h4 {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #6c757d;
+ }
+    .map textarea {
+        font-size: 16px;
+        padding: 15px; 
+        border: 1px solid;
+        border-radius: 0.25em;
+    }
+
+    .links {
+        text-align: center;
+        width: 100%;
+    }
+   .links .list li {
+    display: inline-block;
+    background-color: #212529;
+    color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.links .icons3 {
+    width: 33.333%;
+}
+.links .list i {
+    padding: 15px;
+}
+.links .list li:hover {
+    background-color:#fed136;
+    cursor: pointer;
+} 
+.links .copyright {
+    float: left;
+    width: 33.333%;
+}
+
+.links .privacy {
+    float: right;
+    width: 33.333%;
+    
+}
+
+.links .privacy li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.links .privacy a {
+    color: #fed136;
+}
+
+.portfolio {
+    text-align: center;
+} 
+.portfolio .image {
+    width: 33.333%;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+
+.portfolio .image img {
+    width: 100%;
+}
+
+.portfolio .service-content{
+    position: absolute;
+    top:0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding-top: 100px;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+}
+
+.portfolio .service-content:hover {
+    opacity: 0.8;
 }
